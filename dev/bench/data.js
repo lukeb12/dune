@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788094891425,
+  "lastUpdate": 1788094900706,
   "repoUrl": "https://github.com/lukeb12/dune",
   "entries": {
     "Melange Benchmark": [
@@ -415684,6 +415684,35 @@ window.BENCHMARK_DATA = {
           {
             "name": "synthetic build time (cold, Linux)",
             "value": 50.76324860233999,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@rgrinberg.com",
+            "name": "Rudi Grinberg",
+            "username": "rgrinberg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a55bf59a5be384136df6121a0114178261d8c50",
+          "message": "test(action-plugin): reproduce directories in glob listings (#16265)\n\nRecord the current `read_directory_with_glob` behavior when the action\nplugin\nruns directly: returned listings include subdirectories even though glob\ndependencies only track files.\n\nSigned-off-by: Rudi Grinberg <me@rgrinberg.com>",
+          "timestamp": "2026-08-30T13:38:23+01:00",
+          "tree_id": "9e18a927640a075d2ce297453f49dc05b8c0bf4a",
+          "url": "https://github.com/lukeb12/dune/commit/7a55bf59a5be384136df6121a0114178261d8c50"
+        },
+        "date": 1788094899536,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "synthetic build time (warm, Linux)",
+            "value": 0.50910197282,
             "unit": "seconds"
           }
         ]
