@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788094900706,
+  "lastUpdate": 1788176705858,
   "repoUrl": "https://github.com/lukeb12/dune",
   "entries": {
     "Melange Benchmark": [
@@ -571241,6 +571241,35 @@ window.BENCHMARK_DATA = {
           {
             "name": "synthetic watch build time (warm, Linux)",
             "value": 3.139653787746667,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alizter@gmail.com",
+            "name": "Ali Caglayan",
+            "username": "Alizter"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bdb212c861517e5ffab69d1a9c1a48a51f2e01c0",
+          "message": "test(stdune): enable path tests on Windows (#16278)\n\n## Description\n\nRun the stdune path tests as part of `@runtest-windows`.\n\nKeep the existing platform-specific `Path.External.reach` result in the\ntest so\nthis change only enables coverage; it does not change path behavior.\n\n## Stack\n\n1. This PR\n2. #16279\n3. #16280",
+          "timestamp": "2026-08-31T13:17:05+02:00",
+          "tree_id": "dff8e122eb4c4259abb29f8335a087b109ce8cba",
+          "url": "https://github.com/lukeb12/dune/commit/bdb212c861517e5ffab69d1a9c1a48a51f2e01c0"
+        },
+        "date": 1788176417441,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "synthetic watch build time (warm, Linux)",
+            "value": 3.7609101349866667,
             "unit": "seconds"
           }
         ]
