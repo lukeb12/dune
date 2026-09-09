@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788177030941,
+  "lastUpdate": 1788963853548,
   "repoUrl": "https://github.com/lukeb12/dune",
   "entries": {
     "Melange Benchmark": [
@@ -571328,6 +571328,35 @@ window.BENCHMARK_DATA = {
           {
             "name": "synthetic watch build time (warm, Linux)",
             "value": 3.7609101349866667,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "anmonteiro@gmail.com",
+            "name": "Antonio Nuno Monteiro",
+            "username": "anmonteiro"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc9391869506962c80df0c488037c65c0cdbef18",
+          "message": "fix(melange): fall back to Melange module artifacts (#16339)\n\nResolve cmi, cmt, and cmti against the OCaml module set first, falling\nback to Melange when the module is not selected for OCaml.\n\nFixes the regressions in #16337 and #16338. CMJ support is split into\nanmonteiro/dune#187; documentation remains in anmonteiro/dune#186.\n\n---------\n\nSigned-off-by: Antonio Nuno Monteiro <anmonteiro@gmail.com>",
+          "timestamp": "2026-09-08T16:38:14-07:00",
+          "tree_id": "5dad86d5d9b4155bf595552744994bfc6bc08799",
+          "url": "https://github.com/lukeb12/dune/commit/bc9391869506962c80df0c488037c65c0cdbef18"
+        },
+        "date": 1788963655132,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "synthetic watch build time (warm, Linux)",
+            "value": 2.458232825846667,
             "unit": "seconds"
           }
         ]
