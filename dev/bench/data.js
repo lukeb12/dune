@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794152297764,
+  "lastUpdate": 1794152306638,
   "repoUrl": "https://github.com/lukeb12/dune",
   "entries": {
     "Melange Benchmark": [
@@ -415858,6 +415858,35 @@ window.BENCHMARK_DATA = {
           {
             "name": "synthetic build time (cold, Linux)",
             "value": 63.51576557512001,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@rgrinberg.com",
+            "name": "Rudi Grinberg",
+            "username": "rgrinberg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5ec5701a4bfa8721f7dbec5fa7026ee6b900db3f",
+          "message": "test(action-plugin): expose missing package dependency inference (#16356)\n\nCompare a DAP read with a regular action declaring the same build-tree\ninput owned by the provider package. With strict package checks enabled,\nthe regular action reports the missing provider dependency, while DAP\nincorrectly succeeds both after execution and when inspecting the\nworkspace-cached result.\n\nThe test records current broken behavior without implementation changes.\nIt does not rely on install staging paths or internal package-files\naliases.\n\nSigned-off-by: Rudi Grinberg <me@rgrinberg.com>",
+          "timestamp": "2026-11-08T23:04:15+08:00",
+          "tree_id": "06ab72b9a252675a8325798d956d63f34f94f887",
+          "url": "https://github.com/lukeb12/dune/commit/5ec5701a4bfa8721f7dbec5fa7026ee6b900db3f"
+        },
+        "date": 1794152305684,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "synthetic build time (warm, Linux)",
+            "value": 0.52617790224,
             "unit": "seconds"
           }
         ]
